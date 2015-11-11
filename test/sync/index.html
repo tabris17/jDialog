@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>同步方式加载</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script>window.__jdialog = {"register": true};</script>
+    <script src="../../src/jdialog/jdialog.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<script>
+function customDialog() {
+    (new jDialog()).show(
+        {body: [{label:'用户名',type:'textbox',maxlength:100,name:'username',placeholder:'输入用户名'},{label:'密码',type:'textbox',password:true,placeholder:'输入密码'},{label:'简介',type:'textbox',rows:10,multiline:true,placeholder:'输入简介'},{label:'记住密码',type:'checkbox'}]}, 
+        function (result) { 
+            var _this = this; 
+            confirm(
+                this.getData('username') + '是否关闭？', 
+                function (result) { 
+                    result && _this.close(); 
+                }
+            ); 
+            return false; 
+        }
+    );
+}
+
+function updateDialog() {
+    (new jDialog()).show(
+        {message: '点击确定更改对话框样式。'}, 
+        function (result) { 
+            if (result != 'ok') return; 
+            this.update(
+                {title:'更新标题',message:'更新消息',body:[{label:'用户名',type:'textbox',name:'username',placeholder:'输入用户名'}],buttons:jDialog.BUTTON_OK_CANCEL,closable:false,draggable:false,modal:false}, 
+                function (result) { 
+                    alert('您输入的用户名为：'+this.getData('username')); 
+                }
+            );
+            return false; 
+        });
+}
+</script>
+<ol>
+<li><button onclick="window.alert('Test Message')">window.alert</button></li>
+<li><button onclick="window.confirm('Test Message?')">window.confirm</button></li>
+<li><button onclick="window.prompt('Test Message:')">window.prompt</button></li>
+<li><button onclick="(new jDialog()).show({message: 'New', closable: false, modal: false, title: 'Title'})">Center</button></li>
+<li><button onclick="(new jDialog()).show({message: 'New', closable: false, modal: false, position: 'left top'})">Left Top</button></li>
+<li><button onclick="(new jDialog()).show({message: 'New', modal: false, position: 'right bottom'})">Right Bottom</button></li>
+<li><button onclick="(new jDialog()).show({message: 'New', modal: false, title: 'Title', draggable: false})">Not Draggable</button></li>
+<li><button onclick="(new jDialog()).show({body: '<b>HTML Body</b>'})">HTML Body</button></li>
+<li><button onclick="(new jDialog()).show({body: document.createElement('input')})">DOM Element Body</button></li>
+<li><button onclick="customDialog()">Custom Body</button></li>
+<li><button onclick="updateDialog()">update()</button></li>
+</ol>
+</body>
+</html>
