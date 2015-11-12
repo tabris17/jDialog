@@ -367,8 +367,8 @@ Type: JSON Object<br>
 Type: String<br>
 表示组件的标签文本。
 - multiline<br>
-表示 textbox 是否为多行输入。
 Type: Boolean<br>
+表示 textbox 是否为多行输入。
 - placeholder<br>
 Type: String<br>
 表示 textbox 未输入时的占位文本。
