@@ -407,3 +407,4 @@ Type: Boolean<br>
 对话框默认主题。默认为 `default`。
 
 必须在 jdialog.js 加载前配置好 `window.__jdialog`。
+	window.__jdialog = {register: true, theme: "default"};
