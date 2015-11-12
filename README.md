@@ -115,11 +115,11 @@ Type: String<br>
 Type: String<br>
 用于定义对话框在当前文档可视区域内的位置。由两个值组成，分别定义水平位置和垂直位置：
 
-值|描述
---|---
-top left<br>top center<br>top right<br>center left<br>center center<br>center right<br>bottom left<br>bottom center<br>bottom right|第一个值表示水平位置，可以是 `left`、`right` 或 `center`；<br>第二个值表示垂直位置，可以是 `top`、`bottom` 或 `center`。
-*x*% *y*%|相对定位。<br>第一个值表示水平位置，第二个值表示垂直位置。<br>左上角是 `0% 0%`，右下角是 `100% 100%`。
-*x*pos *y*pos|绝对定位。<br>第一个值表示水平位置，第二个值表示垂直位置。<br>左上角是 `0 0`（`0px 0px`）。单位是 `px` 或其他 CSS 允许的长度单位。<br>可以和相对定位混用。
+值 | 描述
+------ | -------
+top left<br>top center<br>top right<br>center left<br>center center<br>center right<br>bottom left<br>bottom center<br>bottom right | 第一个值表示水平位置，可以是 `left`、`right` 或 `center`；<br>第二个值表示垂直位置，可以是 `top`、`bottom` 或 `center`。
+*x*% *y*% | 相对定位。<br>第一个值表示水平位置，第二个值表示垂直位置。<br>左上角是 `0% 0%`，右下角是 `100% 100%`。
+*x*pos *y*pos | 绝对定位。<br>第一个值表示水平位置，第二个值表示垂直位置。<br>左上角是 `0 0`（`0px 0px`）。单位是 `px` 或其他 CSS 允许的长度单位。<br>可以和相对定位混用。
 
 默认值是 `center center`。如果只定义了一个值，那么第二个值默认为 `center`。
 
