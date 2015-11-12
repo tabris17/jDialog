@@ -1,7 +1,7 @@
 # jDialog
 
 ## 简介
-一款基于 `jQuery` 的网页对话框组件。可以替换浏览器内置的 `window.alert()`、`window.confirm()`、`window.prompt()` 方法。也支持自定义对话框内容和样式；支持 `textbox`、`checkbox`、`textarea` 等内置组件。
+一款基于 `jQuery` 的网页对话框组件。可以替换浏览器内置的 `window.alert()` 、`window.confirm()` 、`window.prompt()` 方法。也支持自定义对话框内容和样式；支持 `textbox`、`checkbox`、`textarea` 等内置组件。
 
 ## 用法
 
@@ -352,47 +352,47 @@ Type: String<br>
 - checkbox
 
 ### 属性
-- id<br>
+- `id`<br>
 Type: String<br>
 组件的 Id。
-- parent<br>
+- `parent`<br>
 Type: Element<br>
 组件父节点的 HTML 元素。
-- config<br>
+- `config`<br>
 Type: JSON Object<br>
 组件配置信息。
 
 ### textbox 配置
-- label<br>
+- `label`<br>
 Type: String<br>
 表示组件的标签文本。
-- multiline<br>
+- `multiline`<br>
 Type: Boolean<br>
 表示 textbox 是否为多行输入。
-- placeholder<br>
+- `placeholder`<br>
 Type: String<br>
 表示 textbox 未输入时的占位文本。
-- value<br>
+- `value`<br>
 Type: String<br>
 表示 textbox 默认值。
-- maxlength<br>
+- `maxlength`<br>
 Type: Integer<br>
 表示 textbox 输入文本的长度上限。
-- width<br>
+- `width`<br>
 Type: Integer<br>
 表示 textbox 的宽度。
-- rows<br>
+- `rows`<br>
 Type: Integer<br>
 当 `multiline` 为 `true` 时，表示多行文本的行数。
-- password<br>
+- `password`<br>
 Type: Boolean<br>
 当 `multiline` 为 `false` 时，表示 textbox 是密码输入框。
 
 ### checkbox 配置
-- label<br>
+- `label`<br>
 Type: String<br>
 表示组件的标签文本。
-- checked<br>
+- `checked`<br>
 Type: Boolean<br>
 表示 checkbox 默认是否为选中状态。
 
@@ -401,9 +401,9 @@ Type: Boolean<br>
 
 通过 `window.__jdialog` 可以重写 jDialog 的全局配置。全局配置项包括：
 
-- register<br>
+- `register`<br>
 是否自动注册为系统对话框。默认为 `false`。
-- theme<br>
+- `theme`<br>
 对话框默认主题。默认为 `default`。
 
 必须在 jdialog.js 加载前配置好 `window.__jdialog`。
