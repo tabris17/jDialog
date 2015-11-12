@@ -217,7 +217,7 @@ myDialog.show({"title": "标题", "message": "消息", "body": [
             }
             var positions = this.position.split(" ", 2);
             if (positions.length == 1) {
-                positions[1] = positions[0];
+                positions[1] = "center";
             }
             var x = positions[0].toLowerCase(),
                 y = positions[1].toLowerCase();
