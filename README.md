@@ -95,19 +95,19 @@ Type: JSON Object<br>
 
 按钮的属性包括：
 
-- primary<br>
+- `primary`<br>
 Type: Boolean<br>
 表示按钮是否为主按钮。主按钮元素会添加 `dialog-button-primary` 类名，在 UI 表现上会着重体现。
-- default<br>
+- `default`<br>
 Type: Boolean<br>
 表示按钮是否为缺省按钮。缺省按钮元素会添加 `dialog-button-default` 类名，按钮响应回车按键事件。
-- cancel<br>
+- `cancel`<br>
 Type: Boolean<br>
 表示按钮是否为取消按钮。取消按钮元素会添加 `dialog-button-cancel` 类名，按钮响应 ESC 按键事件。
-- text<br>
+- `text`<br>
 Type: String<br>
 按钮上显示的文字。
-- class<br>
+- `class`<br>
 Type: String<br>
 按钮元素要添加的类名。
 
