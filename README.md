@@ -368,7 +368,7 @@ Type: String<br>
 表示组件的标签文本。
 - `multiline`<br>
 Type: Boolean<br>
-表示 textbox 是否为多行输入。
+表示 textbox 是否为多行输入。默认为 `false`。
 - `placeholder`<br>
 Type: String<br>
 表示 textbox 未输入时的占位文本。
@@ -386,7 +386,7 @@ Type: Integer<br>
 当 `multiline` 为 `true` 时，表示多行文本的行数。
 - `password`<br>
 Type: Boolean<br>
-当 `multiline` 为 `false` 时，表示 textbox 是密码输入框。
+当 `multiline` 为 `false` 时，表示 textbox 是密码输入框。默认为 `false`。
 
 ### checkbox 配置
 - `label`<br>
