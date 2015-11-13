@@ -1,0 +1,41 @@
+.dialog-main{position:fixed;width:640px;border:5px solid rgba(0,0,0,.2);background-color:white;left:0;top:0;background-clip:padding-box;font-size:16px;color:#212121;font-family:"Microsoft YaHei",SimSun,Arial;}
+.dialog-main button{font-family:"Microsoft YaHei",SimSun,Arial;}
+.dialog-main:focus{outline:none;}
+.dialog-mask{background-color:#666;opacity:0.8;filter:alpha(opacity=80);}
+.dialog-button{display:inline-block;}
+.dialog-button button{padding:0;margin:0;background:none;border:none;}
+.dialog-button-close button{width:60px;height:60px;font-size:40px;line-height:40px;color:#aaa;}
+.dialog-button-close button:hover{color:black;}
+.dialog-title{height:60px;text-align:center;border-bottom:1px solid #eee;}
+.dialog-title-label{font-size:26px;line-height:60px;display:inline;}
+.dialog-title-buttons{float:right;}
+.dialog-message{margin:50px 50px 30px 50px;}
+.dialog-body{margin:50px 50px 30px 50px;}
+.dialog-message pre{margin:0;padding:0;font-family:"Microsoft YaHei",SimSun,Arial;}
+.dialog-footer{height:80px;text-align:center;}
+.dialog-footer-buttons{height:40px;padding:20px 0;}
+.dialog-footer-buttons .dialog-button{height:40px;background-color:#fe8333;border-radius:4px;margin:0 15px;}
+.dialog-footer-buttons .dialog-button-cancel{background-color:#c3c3c3;}
+.dialog-footer-buttons .dialog-button button{line-height:40px;font-size:16px;color:white;padding:0 40px;}
+.dialog-style-draggable .dialog-title{cursor:move;}
+.dialog-style-unclosable .dialog-button-close button{display:none;}
+.dialog-layout{margin-bottom:10px;line-height:24px;}
+.dialog-textbox{border:1px solid gray;border-radius:4px;}
+.dialog-textbox input{width:100%;height:36px;border:none;display:block;padding:0 10px;border-radius:4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+}
+.dialog-textbox input:focus{outline:none;}
+.dialog-textbox textarea{width:100%;border:none;resize:none;padding:5px 10px;line-height:24px;display:block;border-radius:4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+}
+.dialog-textbox textarea:focus{outline:none;}
+.dialog-checkbox{display:inline;}
+.dialog-checkbox input{vertical-align:middle;}

@@ -9,6 +9,7 @@
 .dialog-title-buttons{float:right;}
 .dialog-title-buttons .dialog-button button{width:20px;height:20px;text-align:center;line-height:18px;font-size:16px;font-weight:bold;}
 .dialog-message{margin:20px;}
+.dialog-message pre{margin:0;padding:0;}
 .dialog-body{margin:20px;}
 .dialog-footer{text-align:center;padding:10px;}
 .dialog-footer-buttons .dialog-button{margin:0 5px;}
