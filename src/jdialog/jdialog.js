@@ -86,7 +86,7 @@ myDialog.show({"title": "标题", "message": "消息", "body": [
             var config = this.config, id = this.id, parent = this.parent;
             var checkbox = $("<input>").attr("id", id).attr("type", 'checkbox');
             if (config.checked) {
-                textarea.attr("checked", "checked");
+                checkbox.attr("checked", "checked");
             }
             parent.append($('<div class="dialog-checkbox"></div>').append(checkbox));
             if (config.label) {
