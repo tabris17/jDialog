@@ -484,12 +484,12 @@ myDialog.show({"title": "标题", "message": "消息", "body": [
             this._originalPromptHandler = global.prompt;
             this._originalOpenHandler = global.open;
             global.alert = function (message, onclose) {    // 和系统原生接口保持一致，onclose 是可选参数。
-                getDefaultDialog().show({"message": message, "buttons": BUTTON_OK}, function () {
+                getDefaultDialog().show({"title": "提示", "message": message, "buttons": BUTTON_OK}, function () {
                     if ($.isFunction(onclose)) return onclose("ok");
                 });
             };
             global.confirm = function (message, onclose) {   // 由于模拟函数不能阻塞执行，所以需要通过 onclose 回调函数来获取结果。
-                getDefaultDialog().show({"message": message, "buttons": BUTTON_OK_CANCEL}, function (result) {
+                getDefaultDialog().show({"title": "确认", "message": message, "buttons": BUTTON_OK_CANCEL}, function (result) {
                     if ($.isFunction(onclose)) return onclose(result == "ok" ? true : false);
                 });
             };
@@ -535,6 +535,8 @@ myDialog.show({"title": "标题", "message": "消息", "body": [
     jDialog.BUTTON_OK_CANCEL = BUTTON_OK_CANCEL;
     jDialog.BUTTON_YES_NO = BUTTON_YES_NO;
     jDialog.BUTTON_YES_NO_CANCEL = BUTTON_YES_NO_CANCEL;
+    
+    jDialog.default = getDefaultDialog;
     
     // 注册组件
     jDialog.registerComponent = function (name, handler) {
